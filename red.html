@@ -23,7 +23,7 @@
 		    	console.log("¡Estamos en vivo!");
 		        if (request.status === 200) {
 		        	console.log("¡Estamos en Ok!");
-		        	document.getElementsByClassName("estudiante").innerHTML = request.responseText;
+		        	document.getElementsByClassName("estudiante")[0].innerHTML = request.responseText;
 		           console.log(request.responseText);
 		        } else {
 		            console.error(request.statusText);
