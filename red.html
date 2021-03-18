@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Red de Estudiantes</title>
+</head>
+<body>
+
+<div class="estudiante" data-codigo="0152556">
+	
+</div>
+
+<script type="text/javascript">
+	
+
+	document.addEventListener('DOMContentLoaded', function () {
+	    console.log("¡Estamos en vivo!");
+	    var request = new XMLHttpRequest();
+		request.open('GET', '0152556/index.html', true);
+		console.log("¡Estamos en vivo!");
+		request.onload = function (e) {
+			console.log("¡Estamos en vivo!");
+		    if (request.readyState === 4) {
+		    	console.log("¡Estamos en vivo!");
+		        if (request.status === 200) {
+		        	console.log("¡Estamos en Ok!");
+		           console.log(request.responseText);
+		        } else {
+		            console.error(request.statusText);
+		        }
+		    }
+		};
+		request.send();
+	});
+
+
+</script>
+</body>
+</html>
